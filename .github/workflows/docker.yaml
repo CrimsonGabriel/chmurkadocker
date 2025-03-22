@@ -3,11 +3,12 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Zmień na swoją gałąź, jeśli nie używasz main
+      - main  # Zmien na swoja gałąź, jeśli używasz innej
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
